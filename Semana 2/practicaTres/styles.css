@@ -1,0 +1,19 @@
+body{
+    background-color: chocolate;
+}
+.title{
+    font-size: 2.8em;
+    color: crimson;
+}
+.logo{
+    width: 300px;
+}
+#principal{
+    font-size: 4.5em;
+}
+#titulos{
+    border: 2px solid black;
+    width: 60vw;
+    margin: auto;
+    padding: 1em;
+}

@@ -10,7 +10,7 @@
 
 ### **📍 NODE**
 
-Recuerda que debes descargar la versión **LTS** de Node.JS, ya que la versión más actual puede tener incompatibilidades.
+**Recuerda** que debes descargar la versión **LTS** de Node.JS, ya que la versión más actual puede tener incompatibilidades.
 
 [**LINK DE DESCARGA**](https://nodejs.org/es/)
 
@@ -18,7 +18,7 @@ Recuerda que debes descargar la versión **LTS** de Node.JS, ya que la versión 
 
 </br >
 
-### **📍 GIT**
+### **📍🤷‍♂️ GIT**
 
 Recuerda que si tu sistema operativo en **Linux** ya tienes GIT instalado por defecto. Si tu sistema operativo es **Windows** puedes descargarlo en el siguiente link:
 
