@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Jerarquía - Departamento de Sistemas</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <h2>Jerarquía de Procesos - Departamento de Sistemas</h2>
+    
+    <div class="mermaid">
+        graph TD
+            A[Departamento de Sistemas] --> B[Implementación de Sistemas]
+            A --> C[Desarrollo de Software]
+            A --> D[Monitoreo del Sistema]
+            A --> E[Soporte Técnico]
+
+            B --> B1[Configuración de Hardware]
+            B --> B2[Instalación de Software]
+
+            C --> C1[Programación y Personalización]
+            C --> C2[Pruebas de Software]
+
+            D --> D1[Supervisión de Red]
+            D --> D2[Gestión de Incidencias]
+
+            E --> E1[Soporte a Usuarios]
+            E --> E2[Resolución de Problemas]
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Header styling */
+.header {
+    background-image: linear-gradient();
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Logo styling */
+.logo img {
+    width: 35px;
+}
+
+
+
+/* Social media icons */
+.socials-1 a img {
+    width: 25px;
+    margin-right: 5px;
+    
+}
+
+.socials-1 a {
+    text-decoration: none;
+}
+
+/* Header content styling */
+.header-content {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-txt  {
+    width: 100%;
+}
+
+.header-txt h1  {
+    font-size: 80px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.header-txt p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Header image styling */
+.header-img {
+    width: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    width: 750px;
+}
+
+
+#titulo{
+    background-image: linear-gradient(
+    rgb(0,0,0,0.7),
+    rgb(0,0,0,0.7)),
+    url(assets/danzaheader.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+.historia{
+    padding: 100px 0;
+    background-color: #efefef;
+}
+.abt-content{
+    align-items: center;
+    display: flex;
+    
+}
+.abt-txt h2{
+    font-size: 100px;
+
+}
+.abt-img {
+    width: 50%;
+    text-align: center;
+}
+.abt-img img{
+    width: 500px;
+    margin-right: 70px;
+}
+.abt-txt{
+    width: 50%;
+    padding-right: 100px;
+    margin-left: 70px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden; /* Ocultar elementos fuera del contenedor */
+    width: 100%;
+    height: 400px;
+    position: relative; /* Para permitir la posición absoluta en el caption */
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    animation: slide 15s infinite; /* Animación continua */
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-item h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .carousel-item p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  
+  /* Animación para el carrusel */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); } /* Muestra la primera imagen durante 3 segundos */
+    25% { transform: translateX(-100%); } /* Cambia a la segunda imagen */
+    45% { transform: translateX(-100%); } /* Muestra la segunda imagen durante 3 segundos */
+    50% { transform: translateX(-200%); } /* Cambia a la tercera imagen */
+    70% { transform: translateX(-200%); } /* Muestra la tercera imagen durante 3 segundos */
+    100% { transform: translateX(0); } /* Regresa al principio */
+  }
+  

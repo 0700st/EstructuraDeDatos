@@ -7,6 +7,11 @@ function esNumeroEntero(numero) {
   // -1212 ---> true 
   // 121.212 ---> false 
   // Tu código:
+  if(numero%2==0){
+      return("True");
+  }else{
+    return("False");
+  }
 }
 
 module.exports = esNumeroEntero;

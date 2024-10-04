@@ -1,147 +1,226 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 20px;
-  }
-
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-#nav-link {
-    padding: 10px;
-    background-color: gray;
-    border-radius: 5px;
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    color: inherit; /* Mantiene el color del texto según el contexto del enlace */
-    color: white;
-    border-color: black;
-    border-style: solid;
-}
-
-#nav-link:hover {
-    background-color: white;
-    border-radius: 5px;
-    color: gray;
-    border-color: black;
-    border-style: solid;
-}
-
-/* Estilos para la sección de intro */
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupar toda la ventana visible */
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Fondo degradado llamativo */
-    color: white; /* Texto en blanco para contraste */
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
-    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
-}
-
-.intro h1 {
-    font-size: 4rem; /* Tamaño grande para el encabezado principal */
-    font-weight: 700; /* Negritas para un impacto visual */
-    text-transform: uppercase; /* Convertir a mayúsculas */
-    letter-spacing: 0.1em; /* Espaciado entre letras */
+/* Estilos generales */
+* {
+    box-sizing: border-box;
     margin: 0;
-    animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+    padding: 0;
 }
 
-.intro p {
-    font-size: 1.5rem; /* Texto más pequeño que el título pero aún destacado */
-    margin-top: 10px;
-    font-weight: 300; /* Menos grosor para un contraste sutil con el título */
-    animation: fadeIn 3s ease-in-out; /* Animación más lenta que el título */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Efecto de deslizamiento hacia arriba */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.contacto_ico{
-    height: 25px;
-    width: 25px;
-}
-
-.habilidades_ico{
-    height: 50px;
-    width: 50px;
-}
-
-/*Codigo de carrusel*/
-/* Estilos para la sección de habilidades */
-#habilidades {
+/* Encabezado */
+header {
+    background: #000;
+    color: white;
+    padding: 100px 0;
     text-align: center;
-    padding: 10px 0;
-    background-color: #f4f4f4;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    z-index: 1;
 }
 
-#habilidades h2 {
-    font-size: 2.5rem;
+header h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #888;
+}
+
+/* Sección Acerca de Mí */
+#about {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: -50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+#about h2 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
-/* Contenedor del carrusel */
-.carousel-container {
-    overflow: hidden; /* Oculta lo que esté fuera de la vista del contenedor */
-    padding: 10px 0;
+#about p {
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 auto;
+    color: #aaa;
 }
 
-/* Carrusel */
-.carousel {
+/* Sección Habilidades */
+#skills {
+    background-color: #0d0d0d;
+    padding: 60px 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+#skills ul {
     display: flex;
     justify-content: space-around;
-    gap: 20px; /* Espacio entre los elementos del carrusel */
-    scroll-snap-type: x mandatory; /* Ajuste al desplazarse */
-    overflow-x: auto; /* Habilita el desplazamiento horizontal */
-    scroll-behavior: smooth; /* Desplazamiento suave */
-    padding-bottom: 20px; /* Espacio en la parte inferior */
+    flex-wrap: wrap;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none; /* Ocultar la barra de desplazamiento en Chrome/Safari */
+#skills li {
+    background-color: #222;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.carousel {
-    scrollbar-width: none; /* Ocultar la barra de desplazamiento en Firefox */
+#skills li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.7);
 }
 
-/* Elementos del carrusel */
-.item {
-    min-width: 100px; /* Ancho mínimo de cada tarjeta */
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    scroll-snap-align: start; /* Alinear cada elemento al principio */
-    flex: none; /* No permite que el tamaño del item sea flexible */
-    transition: transform 0.3s ease;
+#skills li:nth-child(odd) {
+    background-color: #333;
 }
 
-.item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Sección Proyectos */
+#projects {
+    background-color: #1a1a1a;
+    padding: 80px 0;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.item p {
-    font-size: 1rem;
-    color: #666;
+#projects h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 40px;
 }
 
-/* Efecto hover */
-.item:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+.project {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #ddd;
+}
+
+.project p {
+    flex: 1;
+    margin: 0 20px;
+    color: #aaa;
+}
+
+.project a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #444;
+}
+
+/* Sección Contacto */
+#contact {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #ddd;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #fff;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111;
+    color: #888;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Medios Responsivos */
+@media (max-width: 768px) {
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills li {
+        width: 90%;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
 }

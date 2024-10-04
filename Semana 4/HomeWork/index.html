@@ -1,118 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework CSS</title>
+    <title>Ingeniero en Sistemas - Ramon Ortega Lopez</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Homework CSS</h1>
-<!-- Encabezado Principal -->
-<header>
-    <nav>
-        <a id="nav-link" href="#sobre-mi">Sobre mí</a>
-        <a id="nav-link" href="#habilidades">Habilidades</a>
-        <a id="nav-link" href="#experiencia">Experiencia</a>
-        <a id="nav-link" href="#proyectos">Proyectos</a>
-        <a id="nav-link" href="#contacto">Contacto</a>
-    </nav>
-    <br>
-    <div class="intro">
-        <h1>Hola, soy [Ramón Ortega López]</h1>
-        <p>Ingeniero en Sistemas | Desarrollador de Software | Especialista en Tecnologías de la Información</p>
-    </div>
-</header>
+    <header>
+        <div class="container">
+            <h1>Ramón Ortega López</h1>
+            <p>Ingeniero en Sistemas Computacionales</p>
+        </div>
+    </header>
 
-<!-- Sección Sobre Mí -->
-<section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Soy un apasionado Ingeniero en Sistemas con experiencia en desarrollo de software, administración de bases de datos, y soporte técnico. Me dedico a crear soluciones eficientes y escalables que resuelvan problemas complejos.</p>
-    <img src="perfil.jpg" alt="Foto de [Nombre Completo]" class="foto-perfil">
-</section>
+    <!-- Sección Acerca de Mí -->
+    <section id="about">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <p>Ingeniero en Sistemas Computacionales con experiencia en desarrollo de software, redes, y seguridad informática. Apasionado por la tecnología y la innovación.</p>
+        </div>
+    </section>
 
-<!-- Sección Habilidades -->
-<section id="habilidades">
-    <h2>Habilidades</h2>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="item">
-                <p><img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/programacion.png" alt=""></p>
-                <h3>Programación</h3>
-                <p>Java, Python, C++</p>
+    <!-- Sección Habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Programación en Java, Python, C++</li>
+                <li>Desarrollo web con HTML, CSS, JavaScript</li>
+                <li>Administración de bases de datos (MySQL, PostgreSQL)</li>
+                <li>Seguridad informática y redes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver más</a>
             </div>
-            <div class="item">
-                <p><img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/html.png" alt=""></p>
-                <h3>Desarrollo Web</h3>
-                <p>HTML, CSS, JavaScript, PHP</p>
-            </div>
-            <div class="item">
-                <p><img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/base.png" alt=""></p>
-                <h3>Bases de Datos</h3>
-                <p>MySQL, Oracle, PostgreSQL</p>
-            </div>
-            <div class="item">
-                <p><img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/framework.png" alt=""></p>
-                <h3>Frameworks</h3>
-                <p>Laravel, React, Angular</p>
-            </div>
-            <div class="item">
-                <p><img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/windows.png" alt="">
-                    <img class="habilidades_ico" src="/EstructuradeDatos/Semana 4/HomeWork/assets/linux.png" alt=""></p>
-                <h3>Sistemas Operativos</h3>
-                <p>Windows, Linux</p>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver más</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Email: <a href="ramonol388@gmail.com">ramonol388@gmail.com</a></p>
+            <p>Teléfono: +2361166033</p>
+            <p>GitHub: <a href="https://github.com/0700st" target="_blank">https://github.com/0700st</a></p>
+        </div>
+    </section>
 
-<!-- Sección Experiencia -->
-<section id="experiencia">
-    <h2>Experiencia</h2>
-    <div class="trabajo">
-        <h3>[Empresa 1]</h3>
-        <p><strong>Rol:</strong> Desarrollador de Software</p>
-        <p><strong>Duración:</strong> Enero 2020 - Presente</p>
-        <p>Descripción de las responsabilidades y logros en este puesto.</p>
-    </div>
-    <div class="trabajo">
-        <h3>[Empresa 2]</h3>
-        <p><strong>Rol:</strong> Ingeniero de Soporte Técnico</p>
-        <p><strong>Duración:</strong> Junio 2018 - Diciembre 2019</p>
-        <p>Descripción de las responsabilidades y logros en este puesto.</p>
-    </div>
-</section>
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ramon Ortega Lopez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-<!-- Sección Proyectos -->
-<section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyecto">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve del proyecto, tecnologías usadas y el impacto.</p>
-        <a href="https://github.com/usuario/proyecto1" target="_blank">Ver en GitHub</a>
-    </div>
-    <div class="proyecto">
-        <h3>Proyecto 2</h3>
-        <p>Descripción breve del proyecto, tecnologías usadas y el impacto.</p>
-        <a href="https://github.com/usuario/proyecto2" target="_blank">Ver en GitHub</a>
-    </div>
-</section>
-
-<!-- Sección Contacto -->
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:</p>
-    <ul>
-        <li><img class="contacto_ico" src="/HomeWork/assets/email.png" alt="email"> Email: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
-        <li><img class="contacto_ico" src="/HomeWork/assets/linkedin.png" alt="linkedin"> LinkedIn: <a href="https://www.linkedin.com/in/usuario" target="_blank">Perfil de LinkedIn</a></li>
-        <li><img class="contacto_ico" src="/HomeWork/assets/github.png" alt="github"> GitHub: <a href="https://github.com/usuario" target="_blank">Perfil de GitHub</a></li>
-    </ul>
-</section>
-
-<!-- Pie de Página -->
-<footer>
-    <p>&copy; 2024 [Nombre Completo]. Todos los derechos reservados.</p>
-</footer>
+    <!-- Enlace al archivo JS si es necesario -->
+    <script src="scripts.js"></script>
 </body>
 </html>
